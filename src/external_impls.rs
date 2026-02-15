@@ -194,3 +194,21 @@ mod actix_impl {
         }
     }
 }
+
+#[cfg(feature = "pbjson-types")]
+mod pbjson_types_impl {
+    use crate::known_deep_size;
+
+    known_deep_size!(0;
+        pbjson_types::Timestamp,
+        pbjson_types::Duration,
+        pbjson_types::Empty,
+    );
+}
+
+#[cfg(feature = "jiff")]
+mod jiff_impl {
+    use crate::known_deep_size;
+
+    known_deep_size!(0; jiff::Timestamp);
+}
