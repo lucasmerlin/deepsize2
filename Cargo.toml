@@ -24,7 +24,7 @@ hashbrown = { version = "0.14", optional = true }
 chrono = { version = "0.4", optional = true }
 tokio = { version = "1", optional = true, default-features = false }
 actix = { version = "0.13.0", optional = true, default-features = false }
-pbjson-types = { version = "0.8", optional = true, default-features = false }
+pbjson-types = { version = "0.9", optional = true, default-features = false }
 jiff = { version = "0.2", optional = true, default-features = false }
 
 [dev-dependencies]
